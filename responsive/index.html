@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Dashboard</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial;
+        }
+
+        body{
+            background:#f2f2f2;
+        }
+
+        /* Navbar */
+
+        .navbar{
+            background:#333;
+            color:white;
+            padding:15px;
+            text-align:center;
+            font-size:22px;
+        }
+
+        /* Dashboard Layout */
+
+        .container{
+            display:flex;
+            flex-wrap:wrap;
+            padding:20px;
+            gap:20px;
+        }
+
+        /* Cards */
+
+        .card{
+            flex:1 1 250px;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            box-shadow:0 0 5px gray;
+            text-align:center;
+        }
+
+        .card h2{
+            margin-bottom:10px;
+            color:#333;
+        }
+
+        .card p{
+            font-size:20px;
+            color:#555;
+        }
+
+        /* Mobile Responsive */
+
+        @media(max-width:600px){
+
+            .navbar{
+                font-size:18px;
+            }
+
+            .container{
+                flex-direction:column;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <div class="navbar">
+        College Admin Dashboard
+    </div>
+
+    <!-- Dashboard Cards -->
+
+    <div class="container">
+
+        <div class="card">
+            <h2>Total Students</h2>
+            <p>1200</p>
+        </div>
+
+        <div class="card">
+            <h2>Total Staff</h2>
+            <p>85</p>
+        </div>
+
+        <div class="card">
+            <h2>Exams Conducted</h2>
+            <p>45</p>
+        </div>
+
+        <div class="card">
+            <h2>Pending Results</h2>
+            <p>12</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
